@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CloudPouch - AWS Cost Explorer</title>
+        <link rel="stylesheet" type="text/css" href="popup.css">
+    </head>
+    <body>
+        <div class="popup">
+            <div class="header">
+                <img src="./icon.png" class="logo-icon">
+                &nbsp;
+                <h3>
+                    Reports for AWS Cost Explorer
+                </h3>
+                <div class="text-small">&nbsp;
+                    v0.2
+                </div>
+            </div>
+            <div class="section_row">
+                <div class="text-regular">
+                    Ready to use, predefined AWS Cost Explorer reports (charts).
+                </div>
+            </div>
+            <div class="section_row">
+                <div class="text-regular">
+                    <strong>Start here</strong>
+                    by opening
+                    <a class="open-link" href="https://console.aws.amazon.com/cost-management/home?region=us-east-1">AWS Cost Explorer</a>
+                    console (webpage). Next select any report from the list below.
+                </div>
+            </div>
+            <div class="section_row">
+                <section class="section_links">
+                    <ul>
+                        <li tooltipInfo="Storage reports">Storage reports</li>
+                        <ul>
+                            <li tooltipInfo="Monthly costs and usage of EBS volumes and snapshots">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=unBlendedCost&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22RecordTypeV2%22,%22displayValue%22:%22Charge%20type%22%7D,%22operator%22:%22EXCLUDES%22,%22values%22:%5B%7B%22value%22:%22Credit%22,%22displayValue%22:%22Credit%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22UsageTypeGroup%22,%22displayValue%22:%22Usage%20type%20group%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22EC2:%20EBS%20-%20HDD(sc1)%22,%22displayValue%22:%22EC2:%20EBS%20-%20HDD(sc1)%22%7D,%7B%22value%22:%22EC2:%20EBS%20-%20HDD(st1)%22,%22displayValue%22:%22EC2:%20EBS%20-%20HDD(st1)%22%7D,%7B%22value%22:%22EC2:%20EBS%20-%20Magnetic%22,%22displayValue%22:%22EC2:%20EBS%20-%20Magnetic%22%7D,%7B%22value%22:%22EC2:%20EBS%20-%20SSD(gp2)%22,%22displayValue%22:%22EC2:%20EBS%20-%20SSD(gp2)%22%7D,%7B%22value%22:%22EC2:%20EBS%20-%20SSD(gp3)%22,%22displayValue%22:%22EC2:%20EBS%20-%20SSD(gp3)%22%7D,%7B%22value%22:%22EC2:%20EBS%20-%20Snapshots%22,%22displayValue%22:%22EC2:%20EBS%20-%20Snapshots%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Monthly&historicalRelativeRange=LAST_12_MONTHS&groupBy=%5B%22Operation%22%5D&isDefault=false&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2023-10-03&usageAggregate=usageQuantity&useNormalizedUnits=false">
+                                    EBS & Snapshost costs & usage
+                                </a>
+                            </li>
+                            <li tooltipInfo="Monthly S3 storage costs by tier">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=unBlendedCost&endDate=2023-10-31&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22Service%22,%22displayValue%22:%22Service%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22Amazon%20Simple%20Storage%20Service%22,%22displayValue%22:%22S3%20(Simple%20Storage%20Service)%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22RecordTypeV2%22,%22displayValue%22:%22Charge%20type%22%7D,%22operator%22:%22EXCLUDES%22,%22values%22:%5B%7B%22value%22:%22Credit%22,%22displayValue%22:%22Credit%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22UsageType%22,%22displayValue%22:%22Usage%20type%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22APN1-TimedStorage-ByteHrs%22,%22displayValue%22:%22APN1-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22APN2-TimedStorage-ByteHrs%22,%22displayValue%22:%22APN2-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22APS1-TimedStorage-ByteHrs%22,%22displayValue%22:%22APS1-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22APS2-TimedStorage-ByteHrs%22,%22displayValue%22:%22APS2-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22APS3-TimedStorage-ByteHrs%22,%22displayValue%22:%22APS3-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EU-TimedStorage-INT-AIA-ByteHrs%22,%22displayValue%22:%22EU-TimedStorage-INT-AIA-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EUC1-TimedStorage-ByteHrs%22,%22displayValue%22:%22EUC1-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EUC1-TimedStorage-INT-AIA-ByteHrs%22,%22displayValue%22:%22EUC1-TimedStorage-INT-AIA-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EUC1-TimedStorage-INT-FA-ByteHrs%22,%22displayValue%22:%22EUC1-TimedStorage-INT-FA-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EUC1-TimedStorage-INT-IA-ByteHrs%22,%22displayValue%22:%22EUC1-TimedStorage-INT-IA-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EUN1-TimedStorage-ByteHrs%22,%22displayValue%22:%22EUN1-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EUW2-TimedStorage-ByteHrs%22,%22displayValue%22:%22EUW2-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EUW2-TimedStorage-INT-AIA-ByteHrs%22,%22displayValue%22:%22EUW2-TimedStorage-INT-AIA-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EUW3-TimedStorage-ByteHrs%22,%22displayValue%22:%22EUW3-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22SAE1-TimedStorage-ByteHrs%22,%22displayValue%22:%22SAE1-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22TimedStorage-ByteHrs%22,%22displayValue%22:%22TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22TimedStorage-INT-FA-ByteHrs%22,%22displayValue%22:%22TimedStorage-INT-FA-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22USE1-TimedStorage-ByteHrs%22,%22displayValue%22:%22USE1-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22USE2-TimedStorage-ByteHrs%22,%22displayValue%22:%22USE2-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22USW1-TimedStorage-ByteHrs%22,%22displayValue%22:%22USW1-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22USW2-TimedStorage-ByteHrs%22,%22displayValue%22:%22USW2-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EU-TimedStorage-ByteHrs%22,%22displayValue%22:%22EU-TimedStorage-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EU-TimedStorage-GDA-ByteHrs%22,%22displayValue%22:%22EU-TimedStorage-GDA-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EU-TimedStorage-GlacierByteHrs%22,%22displayValue%22:%22EU-TimedStorage-GlacierByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EU-TimedStorage-SIA-ByteHrs%22,%22displayValue%22:%22EU-TimedStorage-SIA-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EU-TimedStorage-ZIA-ByteHrs%22,%22displayValue%22:%22EU-TimedStorage-ZIA-ByteHrs%20(GB-Month)%22%7D,%7B%22value%22:%22EU-TimedStorage-ZIA-SmObjects%22,%22displayValue%22:%22EU-TimedStorage-ZIA-SmObjects%20(GB-Month)%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Monthly&groupBy=%5B%22Operation%22%5D&historicalRelativeRange=LAST_12_MONTHS&isDefault=true&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2022-11-01&usageAggregate=usageQuantity&useNormalizedUnits=false">
+                                    S3 storage costs by tier
+                                </a>
+                            </li>
+                            <li tooltipInfo="Monthly S3 requests usage & costs">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=unBlendedCost&endDate=2023-10-31&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22Service%22,%22displayValue%22:%22Service%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22Amazon%20Simple%20Storage%20Service%22,%22displayValue%22:%22S3%20(Simple%20Storage%20Service)%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22RecordTypeV2%22,%22displayValue%22:%22Charge%20type%22%7D,%22operator%22:%22EXCLUDES%22,%22values%22:%5B%7B%22value%22:%22Credit%22,%22displayValue%22:%22Credit%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22UsageTypeGroup%22,%22displayValue%22:%22Usage%20type%20group%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22S3:%20API%20Requests%20-%20Standard%20Infrequent%20Access%22,%22displayValue%22:%22S3:%20API%20Requests%20-%20Standard%20Infrequent%20Access%22%7D,%7B%22value%22:%22S3:%20API%20Requests%20-%20Standard%22,%22displayValue%22:%22S3:%20API%20Requests%20-%20Standard%22%7D,%7B%22value%22:%22S3:%20API%20Requests%20-%20Glacier%22,%22displayValue%22:%22S3:%20API%20Requests%20-%20Glacier%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Monthly&groupBy=%5B%22UsageType%22%5D&historicalRelativeRange=LAST_12_MONTHS&isDefault=true&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2022-11-01&usageAggregate=usageQuantity&useNormalizedUnits=false">
+                                    S3 requests costs & usage
+                                </a>
+                            </li>
+                            <li tooltipInfo="RDS storage usage & costs">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=amortizedCost&endDate=2023-10-31&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22Service%22,%22displayValue%22:%22Service%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22Amazon%20Relational%20Database%20Service%22,%22displayValue%22:%22Relational%20Database%20Service%20(RDS)%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22UsageTypeGroup%22,%22displayValue%22:%22Usage%20type%20group%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22RDS:%20Storage%22,%22displayValue%22:%22RDS:%20Storage%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22RecordTypeV2%22,%22displayValue%22:%22Charge%20type%22%7D,%22operator%22:%22EXCLUDES%22,%22values%22:%5B%7B%22value%22:%22Credit%22,%22displayValue%22:%22Credit%22%7D,%7B%22value%22:%22Enterprise%20Discount%20Program%20Discount%22,%22displayValue%22:%22Enterprise%20Discount%20Program%20Discount%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Monthly&groupBy=%5B%22UsageType%22%5D&historicalRelativeRange=LAST_12_MONTHS&isDefault=true&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2022-11-01&usageAggregate=usageQuantity&useNormalizedUnits=false">
+                                    RDS storage usage & costs
+                                </a>
+                            </li>
+                        </ul>
+                        <li tooltipInfo="Data Transfer reports">Data Transfer reports</li>
+                        <ul>
+                            <li tooltipInfo="All data transfer OUT grouped by service">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=unBlendedCost&endDate=2023-10-31&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22RecordTypeV2%22,%22displayValue%22:%22Charge%20type%22%7D,%22operator%22:%22EXCLUDES%22,%22values%22:%5B%7B%22value%22:%22Credit%22,%22displayValue%22:%22Credit%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22UsageTypeGroup%22,%22displayValue%22:%22Usage%20type%20group%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22S3:%20Data%20Transfer%20-%20Internet%20(Out)%22,%22displayValue%22:%22S3:%20Data%20Transfer%20-%20Internet%20(Out)%22%7D,%7B%22value%22:%22EC2:%20Data%20Transfer%20-%20Internet%20(Out)%22,%22displayValue%22:%22EC2:%20Data%20Transfer%20-%20Internet%20(Out)%22%7D,%7B%22value%22:%22EC2:%20Data%20Transfer%20-%20Region%20to%20Region%20(Out)%22,%22displayValue%22:%22EC2:%20Data%20Transfer%20-%20Region%20to%20Region%20(Out)%22%7D,%7B%22value%22:%22RDS:%20Data%20Transfer%20-%20Internet%20-%20Out%22,%22displayValue%22:%22RDS:%20Data%20Transfer%20-%20Internet%20-%20Out%22%7D,%7B%22value%22:%22EC2:%20Data%20Transfer%20-%20CloudFront%20(Out)%22,%22displayValue%22:%22EC2:%20Data%20Transfer%20-%20CloudFront%20(Out)%22%7D,%7B%22value%22:%22DDB:%20Data%20Transfer%20-%20Internet%20(Out)%22,%22displayValue%22:%22DDB:%20Data%20Transfer%20-%20Internet%20(Out)%22%7D,%7B%22value%22:%22S3:%20Data%20Transfer%20-%20Region%20to%20Region%20(Out)%22,%22displayValue%22:%22S3:%20Data%20Transfer%20-%20Region%20to%20Region%20(Out)%22%7D,%7B%22value%22:%22EC2:%20NAT%20Gateway%20-%20Data%20Processed%22,%22displayValue%22:%22EC2:%20NAT%20Gateway%20-%20Data%20Processed%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Monthly&groupBy=%5B%22Operation%22%5D&historicalRelativeRange=LAST_12_MONTHS&isDefault=true&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2022-11-01&usageAggregate=usageQuantity&useNormalizedUnits=false">
+                                    All data transfer OUT grouped by service
+                                </a>
+                            </li>
+                            <li tooltipInfo="S3 data transfer IN & OUT">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=unBlendedCost&endDate=2023-10-31&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22Service%22,%22displayValue%22:%22Service%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22Amazon%20Simple%20Storage%20Service%22,%22displayValue%22:%22S3%20(Simple%20Storage%20Service)%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22UsageTypeGroup%22,%22displayValue%22:%22Usage%20type%20group%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22S3:%20Data%20Transfer%20-%20Internet%20(Out)%22,%22displayValue%22:%22S3:%20Data%20Transfer%20-%20Internet%20(Out)%22%7D,%7B%22value%22:%22S3:%20Data%20Transfer%20-%20Internet%20(In)%22,%22displayValue%22:%22S3:%20Data%20Transfer%20-%20Internet%20(In)%22%7D,%7B%22value%22:%22S3:%20Data%20Transfer%20-%20Region%20to%20Region%20(Out)%22,%22displayValue%22:%22S3:%20Data%20Transfer%20-%20Region%20to%20Region%20(Out)%22%7D,%7B%22value%22:%22S3:%20Data%20Transfer%20-%20Region%20to%20Region%20(In)%22,%22displayValue%22:%22S3:%20Data%20Transfer%20-%20Region%20to%20Region%20(In)%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Monthly&groupBy=%5B%22Operation%22%5D&historicalRelativeRange=LAST_12_MONTHS&isDefault=true&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2022-11-01&usageAggregate=usageQuantity&useNormalizedUnits=false">
+                                    S3 data transfer IN & OUT costs & usage
+                                </a>
+                            </li>
+                            <li tooltipInfo="Inter AZ EC2 transfer costs. Definiately check if you use EKS">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home#/cost-explorer?chartStyle=STACK&costAggregate=unBlendedCost&endDate=2023-10-31&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22UsageTypeGroup%22,%22displayValue%22:%22Usage%20type%20group%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22EC2:%20Data%20Transfer%20-%20Inter%20AZ%22,%22displayValue%22:%22EC2:%20Data%20Transfer%20-%20Inter%20AZ%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22RecordTypeV2%22,%22displayValue%22:%22Charge%20type%22%7D,%22operator%22:%22EXCLUDES%22,%22values%22:%5B%7B%22value%22:%22Credit%22,%22displayValue%22:%22Credit%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Monthly&groupBy=%5B%22Operation%22%5D&historicalRelativeRange=LAST_12_MONTHS&isDefault=true&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2022-11-01&usageAggregate=usageQuantity&useNormalizedUnits=false">
+                                    Inter AZ EC2 transfer costs
+                                </a>
+                            </li>
+                        </ul>
+                        <li tooltipInfo="Compute">Compute</li>
+                        <ul>
+                            <li tooltipInfo="Useful to check if on weekends costs are lower">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=amortizedCost&endDate=2023-10-31&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22Service%22,%22displayValue%22:%22Service%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22Amazon%20Elastic%20Compute%20Cloud%20-%20Compute%22,%22displayValue%22:%22EC2-Instances%20(Elastic%20Compute%20Cloud%20-%20Compute)%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22UsageTypeGroup%22,%22displayValue%22:%22Usage%20type%20group%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22EC2:%20Running%20Hours%22,%22displayValue%22:%22EC2:%20Running%20Hours%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22RecordTypeV2%22,%22displayValue%22:%22Charge%20type%22%7D,%22operator%22:%22EXCLUDES%22,%22values%22:%5B%7B%22value%22:%22Credit%22,%22displayValue%22:%22Credit%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Daily&groupBy=%5B%22InstanceType%22%5D&historicalRelativeRange=LAST_MONTH&isDefault=true&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2023-10-01&usageAggregate=usageQuantity&useNormalizedUnits=false">
+                                    EC2 costs by instance type over a month
+                                </a>
+                            </li>
+                            <li tooltipInfo="Useful to check if on weekends costs are lower">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=amortizedCost&endDate=2023-10-31&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22Service%22,%22displayValue%22:%22Service%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22Amazon%20Relational%20Database%20Service%22,%22displayValue%22:%22Relational%20Database%20Service%20(RDS)%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22RecordTypeV2%22,%22displayValue%22:%22Charge%20type%22%7D,%22operator%22:%22EXCLUDES%22,%22values%22:%5B%7B%22value%22:%22Credit%22,%22displayValue%22:%22Credit%22%7D,%7B%22value%22:%22Enterprise%20Discount%20Program%20Discount%22,%22displayValue%22:%22Enterprise%20Discount%20Program%20Discount%22%7D%5D%7D,%7B%22dimension%22:%7B%22id%22:%22UsageTypeGroup%22,%22displayValue%22:%22Usage%20type%20group%22%7D,%22operator%22:%22INCLUDES%22,%22values%22:%5B%7B%22value%22:%22RDS:%20Running%20Hours%22,%22displayValue%22:%22RDS:%20Running%20Hours%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Daily&groupBy=%5B%22InstanceType%22%5D&historicalRelativeRange=LAST_MONTH&isDefault=true&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2023-10-01&usageAggregate=usageQuantity&useNormalizedUnits=false">
+                                    RDS costs by instance type over a month
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <!-- <li tooltipInfo="Cloud Rates">Cloud Rates</li>
+                        <ul>
+                            <li tooltipInfo="Savings Plan Negation">
+                                <a class="open-link" href="https://us-east-1.console.aws.amazon.com/cost-management/home?region=us-east-1#/cost-explorer?chartStyle=STACK&costAggregate=unBlendedCost&endDate=2023-10-31&excludeForecasting=false&filter=%5B%7B%22dimension%22:%7B%22id%22:%22RecordTypeV2%22,%22displayValue%22:%22Charge%20type%22%7D,%22operator%22:%22EXCLUDES%22,%22values%22:%5B%7B%22value%22:%22SavingsPlanNegation%22,%22displayValue%22:%22Savings%20Plan%20Negation%22%7D%5D%7D%5D&futureRelativeRange=CUSTOM&granularity=Monthly&groupBy=%5B%22UsageType%22%5D&historicalRelativeRange=LAST_12_MONTHS&isDefault=true&reportId=198dedc9-fa9b-4746-9dfc-0818c16b7528&reportName=New%20cost%20and%20usage%20report&showOnlyUncategorized=false&showOnlyUntagged=false&startDate=2022-11-01&usageAggregate=undefined&useNormalizedUnits=false">
+                                    Savings Plan Negation
+                                </a>
+                            </li>
+                        </ul> -->
+                    </ul>
+                </section>
+            </div>
+            <div class="logo-content">
+                <a class="open-link" href="https://cloudpouch.dev/?utm_source=extension">
+                    <img src="./CloudPouch_logo_horizontal_black.png" class="logo-image">
+                </a>
+            </div>
+            <div class="section_row">
+                <div class="text-small">
+                    Created by&nbsp;
+                    <span class="footer">
+                        <a class="open-link" href="https://www.linkedin.com/in/pawelzubkiewicz/">
+                            Pawel Zubkiewicz
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="section_row">
+                <div class="text-regular">
+                    Contribute. <a class="open-link" href="https://github.com/CloudPouch/Reports-for-AWS-Cost-Explorer/blob/main/CONTRIBUTE.md">Submit</a> your favourite AWS Cost Explorer report.
+                </div>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Reports for AWS Cost Explorer",
+  "version": "0.2",
+  "description": "List of predefined AWS Cost Explorer reports (charts) useful in cost analysis and optimization of your AWS accounts",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": ["tabs"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
